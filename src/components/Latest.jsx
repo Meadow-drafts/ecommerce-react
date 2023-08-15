@@ -48,7 +48,7 @@ export const trends = [
 
 
 function Latest() {
-    const [rating, setRating] = useState(0)
+    const [rating, setRating] = useState(2)
 
     // Catch Rating value
   const handleRating = (rate) => {
@@ -57,7 +57,7 @@ function Latest() {
 
   const handleReset = () => {
     // Set the initial value
-    setRating(0)
+    setRating(2.5)
   }
     return (
         <>
@@ -85,12 +85,12 @@ function Latest() {
                                 <a class="block relative h-48 rounded overflow-hidden">
                                     <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={item.img} />
                                 </a>
-                                <div className='flex '>
-                                <Rating onClick={handleRating} initialValue={rating} size={12} />
+                                <div className='-mb-4 '>
+                                <Rating onClick={handleRating} initialValue={rating} size={16} style={{transform: 'rotate(90deg)'}} />
                                </div>
                                 {/* set initial value */}
    
-                                <div class="mt-4">
+                                <div class="">
                                     <h2 class="text-gray-900 title-font text-sm font-medium">{item.title}</h2>
                                 </div>
                                 <h2 class="text-orange-600 title-font text-sm font-bold">$ {item.price}</h2>
