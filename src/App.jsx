@@ -5,7 +5,7 @@ import './App.css'
 import Header from './components/Header'
 import Hero from './components/Hero';
 import Trending from './components/Trending'
-
+import Latest from './components/Latest'
 import Others from './components/Others'
 import Footer from './components/Footer'
 function App() {
@@ -16,6 +16,7 @@ function App() {
     <Header/>
     <Hero/>
     <Trending/>
+    <Latest/>
       <h1 className="text-3xl text-red-500 font-bold underline">
         Hello world!
       </h1>
