@@ -10,7 +10,9 @@ import Discount from './components/Discount'
 import Popular from './components/Popular'
 import Blog from './components/Blog'
 import Others from './components/Others'
+// import Cart from './components/Cart'
 import Footer from './components/Footer'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -26,7 +28,8 @@ function App() {
         Hello world!
       </h1>
       <Blog/>
-    <Others/>  
+    <Others/> 
+    {/* <Cart/>  */}
     <Footer/>  
     </>
   )
