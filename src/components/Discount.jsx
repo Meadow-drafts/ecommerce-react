@@ -7,8 +7,8 @@ function Discount() {
             <section className="bg-gray-100 ">
                 <div className="grid max-w-screen-xl px-8 py-8 mx-auto lg:gap-2 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="place-self-center text-left ml-10 lg:col-span-7">
-                        <a href="#" className="inline-flex items-center justify-center mb-5 px-5 py-3 text-base font-medium text-center text-gray-900 border  rounded-lg focus:ring-4 focus:ring-gray-100 border-gray-700 hover:bg-gray-700 dark:focus:ring-gray-800">
-                            HURRY UP!
+                        <a href="#" className="inline-flex bg-primary items-center justify-center mb-5 px-5 py-3 text-base font-medium text-center text-white focus:ring-4 focus:ring-gray-100 border-gray-700 hover:bg-gray-700 dark:focus:ring-gray-800">
+                            Hurry Up !
                         </a>
                         <p className="max-w-2xl font-semibold text-black md:text-lg lg:text-3xl ">Up To 25% Discount</p>
                         <p className="max-w-2xl font-semibold text-center text-black md:text-lg lg:text-3xl ">Check it Out</p>
