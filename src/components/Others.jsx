@@ -3,7 +3,7 @@
 function Others() {
     return (
         <>
-            <section class="text-gray-600 bg-gray-100 body-font">
+            <section id='about' class="text-gray-600 bg-gray-100 body-font">
                 <div class="container px-5 py-24 mx-auto">
                     <div class="flex flex-wrap -m-4">
                         <div class="lg:w-1/4 lg:mb-0 md:w-1/2 mb-6 p-4">

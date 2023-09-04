@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Outlet, Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating'
 
 export const trends = [
@@ -18,7 +19,7 @@ export const trends = [
     {
         id: "homepod",
         title: "Homepod mini 2022",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png", price: "70.00",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
         price: "39.00",
 
     },
@@ -32,7 +33,6 @@ export const trends = [
     {
         id: "entertainment",
         title: "Home entertainment",
-        price: "$12.00",
         img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
         price: "79.00",
 
@@ -61,12 +61,15 @@ function Latest() {
   }
     return (
         <>
-            <section class="text-gray-600 body-font overflow-hidden">
+            <section id='latest' class="text-gray-600 body-font overflow-hidden">
                 <div class="container px-28 py-24 mx-auto">
                     <div className="flex justify-between">
-                        <h3 className="text-left mb-5 text-2xl font-semibold text-black">Trending Categories</h3>
+                        <h3 className="text-left mb-5 text-2xl font-semibold text-black">Latest Products</h3>
                         <div className="flex">
+                            <Link to='/trending'>
                             <h3 className="text-right mb-5 text-l font-semibold text-black">View all products</h3>
+                            </Link>
+
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3.5} stroke="currentColor" className="w-6 h-4 mt-1">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>

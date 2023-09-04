@@ -19,7 +19,7 @@ export const trends = [
     {
         id: "homepod",
         title: "Homepod mini 2022",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png", price: "70.00",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
         price: "39.00",
 
     },
@@ -35,7 +35,6 @@ export const trends = [
         title: "Home entertainment",
         price: "$12.00",
         img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "79.00",
 
     },
     {
@@ -78,7 +77,7 @@ function Popular() {
   }
     return (
         <>
-           <section class="text-gray-600 body-font overflow-hidden">
+           <section id='popular' class="text-gray-600 body-font overflow-hidden">
                 <div class="container px-28 py-24 mx-auto">
                     <div className="flex justify-between">
                         <h3 className="text-left mb-5 text-2xl font-semibold text-black">Popular Products </h3>
@@ -117,10 +116,6 @@ function Popular() {
                             </div>
                         ))}
                     </div>
-
-
-
-
                 </div>
             </section>
         </>

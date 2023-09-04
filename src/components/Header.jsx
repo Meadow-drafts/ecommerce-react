@@ -1,18 +1,31 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import { close, logo, menu } from "../assets";
 
 export const navLinks = [
-    {
-        id: "home",
-        title: "Home",
-    },
+    // {
+    //     id: "home",
+    //     title: "Home",
+    // },
     {
         id: "categories",
         title: "Categories",
     },
     {
+        id: "latest",
+        title: "Latest",
+    },
+    {
+        id: "popular",
+        title: "Popular",
+    },
+    {
         id: "about",
         title: "About",
+    },
+    {
+        id: "blog",
+        title: "Blog",
     },
     {
         id: "contact",
@@ -43,7 +56,9 @@ const Header = () => {
     return (
         <nav className="w-full shadow-lg flex py-6 px-5 justify-between items-center navbar">
             {/* Logo */}
+            <Link to='/'>
             <h1 className="text-3xl text-black">Logo</h1>
+            </Link>
 
             {/* Desktop Navigation */}
             <ul className="list-none sm:flex hidden  items-center flex-1">
