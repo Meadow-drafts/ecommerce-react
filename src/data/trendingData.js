@@ -29,12 +29,36 @@ export const trends = [
         img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
 
     },
-    // {
-    //     id: "bag",
-    //     title: "Bag",
-    //     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+    {
+        id: "bag",
+        title: "Bag",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
 
-    // },
+    },
+    {
+        id: "smart",
+        title: "Smart",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+
+    },
+    {
+        id: "flowers",
+        title: "Flower",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+
+    },
+    {
+        id: "sandals",
+        title: "Sandals",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+
+    },
+    {
+        id: "ring",
+        title: "Ring",
+        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
+
+    },
 ];
 
 export const interests = [

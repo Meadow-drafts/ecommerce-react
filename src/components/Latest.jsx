@@ -1,50 +1,9 @@
 import React, { useState } from 'react'
 import { Outlet, Link } from "react-router-dom";
 import { Rating } from 'react-simple-star-rating'
+import { trends } from '../data/trendingData';
 
-export const trends = [
-    {
-        id: "drou-watch",
-        title: "Drou watch with ultra",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "70.00",
-    },
-    {
-        id: "drou-book",
-        title: "Droubook space gray",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "80.00",
 
-    },
-    {
-        id: "homepod",
-        title: "Homepod mini 2022",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "39.00",
-
-    },
-    {
-        id: "charger",
-        title: "DroSafe Charger",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "65.00",
-
-    },
-    {
-        id: "entertainment",
-        title: "Home entertainment",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-        price: "79.00",
-
-    },
-    // {
-    //     id: "bag",
-    //     title: "Bag",
-    //     img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-    //     price:"80.00",
-
-    // },
-];
 
 
 function Latest() {
@@ -79,7 +38,7 @@ function Latest() {
 
 
                     <div class="flex flex-wrap -m-4">
-                        {trends.map((item, index) => (
+                        {trends.slice(0,5).map((item, index) => (
                             <div
                                 key={item.id}
                                 className="lg:w-1/5 md:w-1/3 p-4   w-full sm:w-1/3 "

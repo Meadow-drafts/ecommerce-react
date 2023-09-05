@@ -5,15 +5,10 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Trending from "./components/Trending";
-import Latest from "./components/Latest";
-import Discount from "./components/Discount";
-import Popular from "./components/Popular";
-import Blog from "./components/Blog";
-import Others from "./components/Others";
 import Home from "./pages/Home";
 import TrendingCategories from "./pages/TrendingCategories";
+import PopularCategories from "./pages/PopularCategories";
+import Blog from "./pages/Blog";
 // import Cart from './components/Cart'
 import Footer from "./components/Footer";
 
@@ -27,6 +22,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/trending" element={<TrendingCategories />}></Route>
+          <Route path="/popular" element={<PopularCategories />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
         </Routes>
       </Router>
     </>

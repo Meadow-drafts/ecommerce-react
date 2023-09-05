@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'
 import { Rating } from 'react-simple-star-rating'
-
+import { Link } from 'react-router-dom';
 export const trends = [
     {
         id: "drou-watch",

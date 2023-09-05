@@ -1,21 +1,5 @@
-
-export const events = [
-    {
-        date: "January 21, 2023 ",
-        title: "Musis magnate headphones",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-    },
-    {
-        date: "January 21, 2023 ",
-        title: "Macbook Air labore et dolore",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-    },
-    {
-        date: "January 21, 2023 ",
-        title: "Ipsum available but the majority",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
-    },
-]
+import { events } from "../data/blogData";
+import { Link } from "react-router-dom";
 
 function Blog() {
     return (
@@ -25,7 +9,9 @@ function Blog() {
                 <div className="flex justify-between">
                         <h3 className="text-left mb-5 text-2xl font-semibold text-black">Blog & Events</h3>
                         <div className="flex">
+                            <Link to='/blog'>
                             <h3 className="text-right mb-5 text-l font-semibold text-black">View all events</h3>
+                            </Link>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={3.5} stroke="currentColor" className="w-6 h-4 mt-1">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                             </svg>
@@ -35,7 +21,7 @@ function Blog() {
 
                     <div className="flex flex-wrap -m-4">
 
-                        {events.map((item) => (
+                        {events.slice(0,3).map((item) => (
                             <div className="p-4 md:w-1/3">
                                 <div className="h-full  overflow-hidden">
                                     <img className="p-2 border-2 border-gray-100 mb-2" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png" alt="mockup" />
