@@ -1,5 +1,5 @@
 import { events } from "../data/blogData";
-
+ 
 function Blog() {
   return (
     <>
