@@ -43,7 +43,7 @@ function Latest() {
                                 key={item.id}
                                 className="lg:w-1/5 md:w-1/3 p-4   w-full sm:w-1/3 "
                             >
-                                <div className="border-2 border-gray-300 p-2">
+                                <div className="p-2">
                                 <a class="block relative h-48 rounded overflow-hidden">
                                     <img alt="ecommerce" class="object-cover object-center w-full h-full block" src={item.img} />
                                 </a>
