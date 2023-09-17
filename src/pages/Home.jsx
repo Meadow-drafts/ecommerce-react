@@ -1,5 +1,6 @@
 import Hero from "../components/Hero";
 import Trending from "../components/Trending";
+import Categories from "../components/Category/Categories";
 import Latest from "../components/Latest";
 import Discount from "../components/Discount";
 import Popular from "../components/Popular";
@@ -11,6 +12,7 @@ function Home() {
     <>
       <Hero />
       <Trending />
+      <Categories/>
       <Latest />
       <Discount />
       <Popular />

@@ -6,6 +6,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import Header from "./components/Header";
 import Home from "./pages/Home";
+import Categories from "./components/Category/Categories";
 import TrendingCategories from "./pages/TrendingCategories";
 import PopularCategories from "./pages/PopularCategories";
 import Blog from "./pages/Blog";
