@@ -12,6 +12,8 @@ import PopularCategories from "./pages/PopularCategories";
 import Blog from "./pages/Blog";
 // import Cart from './components/Cart'
 import Footer from "./components/Footer";
+import Login from "./pages/Login";
+import WishList from "./pages/Wishlist";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -25,6 +27,8 @@ function App() {
           <Route path="/trending" element={<TrendingCategories />}></Route>
           <Route path="/popular" element={<PopularCategories />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/wishlist" element={<WishList />}></Route>
         </Routes>
       </Router>
     </>

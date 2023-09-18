@@ -24,7 +24,7 @@ function Trending() {
             <section class="text-gray-600 body-font">
 
                 <div class="container px-5 py-24 mx-auto">
-                    <p className="text-left mb-5 text-2xl font-semibold text-black">Trending Categories</p>
+                    <p className="text-left mb-5 text-2xl font-semibold text-black">Trending Products</p>
                     <div class="flex flex-wrap -m-4">
                         {trends.map((item, index) => (
                             <div
@@ -45,7 +45,7 @@ function Trending() {
                     </div>
                 </div>
 
-                <div class="flex mx-auto w-full md:w-1/2 ">
+                {/* <div class="flex mx-auto w-full md:w-1/2 ">
                     {interests.map((item) => (
                         <div key={item.id} class="p-4 md:w-1/2 w-full">
                         <div class="h-full bg-gray-100 p-8 rounded">
@@ -60,7 +60,7 @@ function Trending() {
                         </div>
                     </div>
                     ))}
-                </div>
+                </div> */}
             </section>
         </>
     )

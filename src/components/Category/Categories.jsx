@@ -46,9 +46,9 @@ function Categories() {
   return (
     <>
       <section id="latest" class="text-gray-600 body-font overflow-hidden">
-        <div class="container px-28 py-24 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
           <div className="flex justify-between">
-            <h3 className="text-left mb-5 text-xl font-semibold text-black">
+            <h3 className="text-left mb-5 text-2xl font-semibold text-black">
               Browse by Categories
             </h3>            
           </div>

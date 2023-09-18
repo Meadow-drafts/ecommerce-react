@@ -69,11 +69,13 @@ function Blog() {
             {events.map((item) => (
               <div className="p-4 md:w-1/3">
                 <div className="h-full  overflow-hidden">
-                  <img
-                    className="p-2 border-2 border-gray-100 mb-2"
-                    src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png"
-                    alt="mockup"
-                  />
+                <a class="block relative h-48 rounded overflow-hidden">
+                    <img
+                      alt="ecommerce"
+                      class="object-cover object-center w-full h-full block"
+                      src={item.img}
+                    />
+                  </a>
                   <div className="px-6 text-left">
                     <p className="leading-relaxed flex mb-2">
                       <svg

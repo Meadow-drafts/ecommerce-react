@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { Rating } from 'react-simple-star-rating'
 import { Link } from 'react-router-dom';
-import { popular } from '../data/popularData';
+import { products } from '../data/productsData';
 
 
 
@@ -37,7 +37,7 @@ function Popular() {
 
 
                     <div class="flex flex-wrap -m-4">
-                        {popular.map((item, index) => (
+                        {products.map((item, index) => (
                             <div
                                 key={item.id}
                                 className="lg:w-1/8 md:w-1/4 p-4   w-full sm:w-1/2 "

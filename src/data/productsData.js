@@ -1,4 +1,4 @@
-export const popular = [
+export const products = [
     {
         id: "dmale-watch",
         title: "Anthony Trivet",
@@ -52,6 +52,34 @@ export const popular = [
         title: "Locket",
         img: "https://cdn.pixabay.com/photo/2018/10/16/21/30/clock-3752527_640.jpg",
         price:"80.00",
+
+    },
+    {
+        id: "sandals",
+        title: "Sandals",
+        img: "https://cdn.pixabay.com/photo/2016/08/08/12/12/sandals-1578199_640.jpg",
+        price:"80.00",
+
+
+    },
+    {
+        id: "ring",
+        title: "Ring",
+        img: "https://images.pexels.com/photos/1232931/pexels-photo-1232931.jpeg?auto=compress&cs=tinysrgb&w=1600",
+        price:"80.00",
+
+
+    },
+    {
+        id: "channel-bleu",
+        title: "Channel Bleu",
+        img: "https://cdn.pixabay.com/photo/2017/06/09/15/40/bottle-2387210_640.jpg"
+
+    },
+    {
+        id: "speaker",
+        title: "Speaker",
+        img: "https://images.pexels.com/photos/13650608/pexels-photo-13650608.jpeg?auto=compress&cs=tinysrgb&w=400"
 
     },
 ];

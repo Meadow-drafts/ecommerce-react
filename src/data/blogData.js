@@ -1,8 +1,8 @@
 export const events = [
     {
         date: "January 21, 2023 ",
-        title: "Musis magnate headphones",
-        img: "https://m.media-amazon.com/images/I/314RnpISyZL._AC_UF1000,1000_QL80_.jpg",
+        title: "Iphone 15 released by apple",
+        img: "https://images.macrumors.com/t/TkNh1oQ0-9TnnBjDnLyuz6yLkjE=/1600x0/article-new/2023/09/iPhone-15-General-Feature-Black.jpg",
     },
     {
         date: "January 21, 2023 ",
@@ -12,21 +12,21 @@ export const events = [
     {
         date: "January 21, 2023 ",
         title: "Ipsum available but the majority",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
+        img: "https://media.istockphoto.com/id/1157599346/photo/black-baseball-cap-isolated-on-white-background-with-clipping-path.webp?b=1&s=612x612&w=0&k=20&c=qHrCWdBzurl_oQdNZLzp6TJfKRROH-hAVMkjzCLpHyQ="
     },
     {
         date: "January 21, 2023 ",
         title: "Ipsum available but the majority",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
+        img: "https://cdn.pixabay.com/photo/2015/06/25/19/08/roses-821705_640.jpg"
     },
     {
         date: "January 21, 2023 ",
         title: "Ipsum available but the majority",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
+        img: "https://cdn.pixabay.com/photo/2015/06/25/19/08/roses-821705_640.jpg"
     },
     {
         date: "January 21, 2023 ",
-        title: "Ipsum available but the majority",
-        img: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/phone-mockup.png",
+        title: "The majority",
+        img: "https://cdn.pixabay.com/photo/2015/06/25/19/08/roses-821705_640.jpg"
     },
 ]
