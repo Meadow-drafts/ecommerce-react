@@ -14,7 +14,7 @@ import Blog from "./pages/Blog";
 import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import WishList from "./pages/Wishlist";
-
+import Cart from "./pages/Cart";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -29,6 +29,7 @@ function App() {
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/login" element={<Login />}></Route>
           <Route path="/wishlist" element={<WishList />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
         </Routes>
       </Router>
     </>

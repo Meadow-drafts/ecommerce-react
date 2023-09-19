@@ -18,7 +18,7 @@ function Explore() {
   };
   return (
     <>
-      <section id="latest" class="text-gray-600 body-font overflow-hidden">
+      <section id="latest" class="">
         <div class="container px-2 py-24 mx-auto">
           <div className="flex justify-between">
             <h3 className="text-left mb-5 text-2xl font-semibold text-black">

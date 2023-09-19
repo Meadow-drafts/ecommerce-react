@@ -51,7 +51,7 @@ const Header = () => {
   const [toggleCategories, setToggleCategories] = useState(false);
 
   return (
-    <nav className="w-full shadow-lg flex py-6 px-5 justify-between items-center navbar">
+    <nav className="w-full z-index fixed top-0 shadow-lg flex  py-6 px-5 bg-white justify-between items-center navbar">
       {/* Logo */}
       <Link to="/">
         <h1 className="text-3xl text-black">Logo</h1>
