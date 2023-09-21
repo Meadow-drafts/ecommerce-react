@@ -15,6 +15,7 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import WishList from "./pages/Wishlist";
 import Cart from "./pages/Cart";
+import ProductDetail from "./components/ProductDetail";
 function App() {
   const [count, setCount] = useState(0);
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/wishlist" element={<WishList />}></Route>
           <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/product/:productId" element={<ProductDetail />}></Route>
         </Routes>
       </Router>
     </>
