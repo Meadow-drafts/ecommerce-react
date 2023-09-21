@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import WishList from "./pages/Wishlist";
 import Cart from "./pages/Cart";
-import ProductDetail from "./components/ProductDetail";
+import ProductDetail from "./components/Product/ProductDetail";
 function App() {
   const [count, setCount] = useState(0);
 

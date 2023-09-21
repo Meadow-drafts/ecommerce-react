@@ -20,7 +20,6 @@ export const navLinks = [
   },
 ];
 
-const categories = ["Shoes", "Clothes", "Jewelry", "Bags"];
 
 export const users = [
   {
@@ -48,10 +47,9 @@ export const users = [
 const Header = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
-  const [toggleCategories, setToggleCategories] = useState(false);
 
   return (
-    <nav className="w-full z-index fixed top-0 shadow-lg flex  py-6 px-5 bg-white justify-between items-center navbar">
+    <nav className="w-full sticky top-0 z-50 shadow-lg flex  py-6 px-5 bg-white justify-between items-center navbar">
       {/* Logo */}
       <Link to="/">
         <h1 className="text-3xl text-black">Logo</h1>
@@ -61,44 +59,21 @@ const Header = () => {
       <ul className="list-none sm:flex hidden  items-center flex-1">
         {navLinks.map((nav, index) => (
           <Link to={nav.link}>
-             <li
-            key={nav.id}
-            className={`font-poppins font-semibold cursor-pointer mx-5 text-[16px] ${
-              active === nav.title ? "text-black" : "text-gray-400"
-            } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
-            onClick={() => {
-              setActive(nav.title);
-              if (nav.title === "Categories") {
-                setToggleCategories(!toggleCategories);
-              }
-            }}
-          >
-            <a href={`#${nav.id}`}>{nav.title}</a>
-          </li>
+              <li
+                key={nav.id}
+                className={`font-poppins font-semibold cursor-pointer mx-5 text-[16px] ${
+                  active === nav.title ? "text-black" : "text-gray-400"
+                } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}>
+                <a href={`#${nav.id}`}>{nav.title}</a>
+              </li>
           </Link>
          
         ))}
-      </ul>
-      {/* categories */}
-      <div
-        className={`${
-          !toggleCategories ? "hidden" : "flex"
-        } p-6 bg-gray-300 absolute top-20 left-48 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
-      >
-        <ul className="list-none flex justify-end items-start flex-1 flex-col">
-          {categories.map((category) => (
-            <li
-              key={category}
-              className="font-poppins font-medium cursor-pointer text-[16px]"
-            >
-              <a href={`#${category}`}>{category}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
+      </ul>   
 
       <ul className="list-none flex  justify-end items-center flex-1">
         {users.map((nav, index) => (
+        
           <li
             key={nav.id}
             className={`font-poppins font-semibold cursor-pointer text-[16px] ${
@@ -155,7 +130,7 @@ const Header = () => {
               </Link>
              
             ) : (
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <Link to={nav.link}>{nav.title}</Link>
             )}
           </li>
         ))}
