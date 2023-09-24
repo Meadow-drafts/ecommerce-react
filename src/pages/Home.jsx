@@ -11,16 +11,18 @@ import Footer from "../components/Footer";
 function Home() {
   return (
     <>
-      <Hero />
-      <FlashSales/>
-      <Categories/>
-      <Trending />
-      <Explore />
-      <Discount/>
-      {/* <Popular /> */}
-      <Blog />
-      <Others />
-      <Footer />
+      <div className="">
+        <Hero />
+        <FlashSales />
+        <Categories />
+        <Trending />
+        <Explore />
+        <Discount />
+        {/* <Popular /> */}
+        <Blog />
+        <Others />
+        <Footer />
+      </div>
     </>
   );
 }
