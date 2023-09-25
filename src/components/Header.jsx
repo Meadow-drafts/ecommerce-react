@@ -49,10 +49,10 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 z-50 shadow-lg flex  py-6 px-5 bg-white justify-between items-center navbar">
+    <nav className="w-full sticky top-0 z-50 shadow-lg flex  py-6 px-5 bg-black text-white justify-between items-center navbar">
       {/* Logo */}
       <Link to="/">
-        <h1 className="text-3xl text-black">Logo</h1>
+        <h1 className="text-3xl text-white">Logo</h1>
       </Link>
 
       {/* Desktop Navigation */}
@@ -62,7 +62,7 @@ const Header = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-semibold cursor-pointer mx-5 text-[16px] ${
-                  active === nav.title ? "text-black" : "text-gray-400"
+                  active === nav.title ? "text-gray-400 underline" : "text-white"
                 } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}>
                 <a href={`#${nav.id}`}>{nav.title}</a>
               </li>
@@ -77,7 +77,7 @@ const Header = () => {
           <li
             key={nav.id}
             className={`font-poppins font-semibold cursor-pointer text-[16px] ${
-              active === nav.title ? "text-black" : "text-gray-400"
+              active === nav.title ? "text-gray-400 underline" : "text-white"
             } ${index === users.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -149,14 +149,14 @@ const Header = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg-white-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-gray-500" : "text-black"
+                  active === nav.title ? "text-gray-500 underline" : "text-white"
                 } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                 onClick={() => setActive(nav.title)}
               >
