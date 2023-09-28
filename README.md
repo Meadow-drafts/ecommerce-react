@@ -1,4 +1,6 @@
 # React + Vite
+![commerece](https://github.com/Meadow-drafts/ecommerce-react/assets/106629154/5754704c-8d79-490c-a269-25d13ea457a2)
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
